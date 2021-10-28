@@ -1,0 +1,280 @@
+*{
+padding: 0%;
+margin: 0;
+border: border-box;
+}
+
+hr{
+    width: 80%;
+    height: 5px;
+    color:rgba(245, 239, 239, 0.837);
+}
+
+html{
+    font-size: 16px;
+    font-family: "Roboto Italic",Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 3;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.nav{
+    list-style: none;
+    justify-content: left;
+    display: flex;
+    margin-right: 10%;
+}
+
+.nav a{
+    margin: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: larger;
+    color: #fff;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.nav a:hover{
+    background: none;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+}
+
+/* end Nav */
+
+.hero{
+    min-height: 80vh;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0);
+}
+
+.hero-info{
+    width: 100%;
+    color: #fff;
+    margin-top: -40%;
+    z-index: 1;
+}
+
+.hero-info h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400px;
+}
+
+.hero-info .info-description{
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    color:rgba(252, 252, 252, 0.535);
+    font-weight: bold;
+}
+
+.hero-info .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social a{
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.hero-info .social-icon{
+    width: 65px;
+    height: 65px;
+}
+
+.hero-info .social-icon:hover{
+    width: 55px;
+    height: 55px;
+}
+
+.hero .hero-img{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.hero .hero-img img{
+    border-image-outset: 200px;
+    margin-top: -10%;
+    height: 100%;
+    width: 100%;
+}
+
+/* End hero */
+
+.product-list{
+    background: #4a204b;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    padding-bottom: 2rem;
+}
+
+.product{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    width: 25%;
+    margin-right: 4%;
+    margin-left: 4%;
+    background: linear-gradient(to bottom, #f7f7f7d7 0%, #ffffff 30%);
+}
+
+.product img{
+    width: 50%;
+    height: 45%;
+    justify-content: center;
+    margin-right: 25%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 25%;
+}
+
+.product .price{
+    margin-right: 30%;
+    margin-left: 30%;
+    background: #4a204b;
+    color:rgba(252, 252, 252);
+    margin-top: 2.2rem;
+    margin-bottom: 2.2rem;
+    border-radius: 7px;
+    height: 10%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product .price:hover{
+    height: 12%;
+    box-shadow: 5px 7px 10px grey;
+    background: none;
+    color: #000;
+}
+
+.ProdTitle{
+    text-align: center;
+    padding-bottom: 0.8em;
+    color:rgba(22, 22, 22, 0.535);
+    letter-spacing: .3rem;
+    font-family: "FreeMono",Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.product-description{
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+    letter-spacing: .2rem;
+    word-spacing: 2px;
+    font-family:  "Janda Cheerful Script", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* End ProdList */
+
+.contact{
+    background: #4a204b;
+    display: inline-block;
+    text-align: center;
+    height: 10%;
+    padding-top: 3rem;
+}
+
+.contact h1{
+    color: #ffffff;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    letter-spacing: .8rem;
+}
+
+.contact img{
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+}
+
+.contact-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 35%;
+    margin-left: 35%;
+} 
+
+.contact .address, .mailContact, .phone{
+    display: block;
+    color:rgba(252, 252, 252);
+    margin-bottom: 15px;
+}
+
+.mailContact{
+    margin-right: -2rem;
+}
+
+.phone {
+    margin-right: 2.3rem;
+}
+
+.contact .opening img{
+    width: 100px;
+    height: 100px;
+}
+
+/* End contact */
+
+.footer{
+    background: rgba(12, 12, 12, 0.837);
+    padding-top: 3rem;
+}
+
+.footer h1{
+    text-align: center;
+    padding-bottom: .5rem;
+}
+
+.footer .about{
+    color: rgba(255, 253, 253, 0.474);
+    text-align: justify;
+    letter-spacing: .2rem;
+    font-size: 18px;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-bottom: 3rem;
+    font-family: "Roboto Heavy",Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: lighter;
+}
