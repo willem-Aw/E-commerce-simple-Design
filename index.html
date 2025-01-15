@@ -14,19 +14,26 @@
 <body>
 	<div class="nav">
 		<div class="navbar container">
-			<div class="logo"><a href="#">Logo</a></div>
-			<ul class="nav">
+			<div class="nav-header">
+				<button class="nav-btn-mobile" role="button" aria-label="Toggle navigation menu" aria-expanded="false">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</button>
+				<div class="logo"><a href="#">Logo</a></div>
+			</div>
+			<ul class="nav-links">
 				<li><a href="" class="nav-link">Home</a></li>
-				<li><a href="" class="nav-link">Service</a></li>
-				<li><a href="" class="nav-link">Food</a></li>
-				<li><a href="" class="nav-link">Room</a></li>
+				<li><a href="" class="nav-link">Services</a></li>
+				<li><a href="" class="nav-link">Rooms</a></li>
+				<li><a href="" class="nav-link">Menus</a></li>
 				<li><a href="" class="nav-link">Contact Us</a></li>
 			</ul>
 		</div>
 	</div>
 	<!--End NavBar-->
-	<section class="hero">
-		<div class="hero-container container">
+	<section class="hero" id="hero">
+		<div class="hero-container container flex">
 			<div class="hero-info">
 				<h1 class="h1">WELCOME TO ANONYMOUS HOTEL</h1>
 				<p class="hero-info-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore omnis rem
@@ -47,25 +54,321 @@
 					</a>
 				</div>
 			</div>
+			<div class="hero-images grid">
+				<div class="img-lis-items grid">
+					<div class="img-wrapper">
+						<img src="./Img/1.jpg" alt="room-beach">
+					</div>
+					<div class="img-wrapper">
+						<img src="./Img/2.jpg" alt="room-beach">
+					</div>
+					<div class="img-wrapper">
+						<img src="./Img/3.jpg" alt="room-beach">
+					</div>
+					<div class="img-wrapper">
+						<img src="./Img/4.jpg" alt="room-beach">
+					</div>
+				</div>
+			</div>
 			<!-- <div class="hero-img">
 				<img src="./Img/pexels-valeria-boltneva-1510692.jpg" alt="#">
 			</div> -->
 		</div>
 	</section>
 	<!--End Hero-->
-	<section class="product-listing" id="product-listing">
-		<div class="product-listing__container container">
-			<h2 class="h2 listing-title">
+
+	<section class="about section-has-top" id="about-listing">
+		<div class="about__container container">
+			<h2 class="h2 listing-title has-border">
+				<span>About us</span>
+			</h2>
+			<div class="about-content grid">
+				<div class="presentation grid">
+					<div class="one grid">
+						<img src="./Img/h1.jpg" alt="Hotels">
+					</div>
+					<div class="two grid">
+						<img src="./Img/h2.jpg" alt="Hotels">
+					</div>
+					<div class="three grid">
+						<img src="./Img/h3.jpg" alt="Hotels">
+					</div>
+					<div class="four grid">
+						<img src="./Img/h4.jpg" alt="Hotels">
+					</div>
+					<div class="five grid">
+						<img src="./Img/h5.jpg" alt="Hotels">
+					</div>
+					<div class="six grid">
+						<img src="./Img/h6.jpg" alt="Hotels">
+					</div>
+				</div>
+				<div class="about-description">
+					<h3 class="h3">Know more about us</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatem illum recusandae
+						aspernatur odio amet numquam atque veritatis iure quam, possimus unde quia ducimus ullam
+						eligendi debitis eius tenetur eos delectus eum perspiciatis ex laudantium voluptates harum!
+						Obcaecati atque, quibusdam impedit nulla illo adipisci dolores placeat quisquam nihil nostrum
+						eveniet vitae reiciendis doloremque cum, laborum officiis vero exercitationem! Voluptatum iusto
+						dolorem quam saepe nemo, est dolorum sed distinctio eos nihil dicta accusantium corporis
+						tempora? Sit ipsum ex excepturi est, aspernatur adipisci sequi quod ducimus. Numquam tempore,
+						similique quas molestias laborum iusto impedit quibusdam expedita esse minus exercitationem
+						nostrum cumque quam inventore quaerat eaque, quidem ipsam fugiat. Aliquid incidunt obcaecati
+						labore sequi, fugiat ad esse facere molestiae sunt quisquam, harum ipsam, perspiciatis aut iure
+						distinctio eum?</p>
+					<h3 class="h3">Infos annex</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatem illum recusandae
+						aspernatur odio amet numquam atque veritatis iure quam, possimus unde quia ducimus ullam
+						eligendi debitis eius tenetur eos delectus eum perspiciatis ex laudantium voluptates harum!
+						Obcaecati atque, quibusdam impedit nulla illo adipisci dolores placeat quisquam nihil nostrum
+						eveniet vitae reiciendis doloremque cum, laborum officiis vero exercitationem! </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="services section-has-top" id="services">
+		<div class="services-container">
+			<h2 class="h2 services-title has-border">
+				<span>Our Services</span>
+			</h2>
+			<div class="services-card grid">
+				<div class="card grid">
+					<div class="illustration grid">
+						<div><img src="./Img/food.jpeg" alt="Food on table"></div>
+					</div>
+					<div class="text">
+						<h5 class="h5">Guest Hosting</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, numquam facere aut
+							minus ratione quaerat inventore provident, ipsum sint rerum incidunt aperiam quia nobis ad
+							quos sit commodi animi excepturi?</p>
+						<a href="#" class="outlined-btn-with-icon">
+							<span>Read More</span>
+							<span><i class="ri-arrow-right-double-fill"></i></span>
+						</a>
+					</div>
+				</div>
+				<div class="card grid">
+					<div class="illustration grid">
+						<div><img src="./Img/food.jpeg" alt="Food on table"></div>
+					</div>
+					<div class="text">
+						<h5 class="h5">Guest Hosting</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, numquam facere aut
+							minus ratione quaerat inventore provident, ipsum sint rerum incidunt aperiam quia nobis ad
+							quos sit commodi animi excepturi?</p>
+						<a href="#" class="outlined-btn-with-icon">
+							<span>Read More</span>
+							<span><i class="ri-arrow-right-double-fill"></i></span>
+						</a>
+					</div>
+				</div>
+				<div class="card grid">
+					<div class="illustration grid">
+						<div><img src="./Img/bed.jpeg" alt="Food on table"></div>
+					</div>
+					<div class="text">
+						<h5 class="h5">Guest Hosting</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, numquam facere aut
+							minus ratione quaerat inventore provident, ipsum sint rerum incidunt aperiam quia nobis ad
+							quos sit commodi animi excepturi?</p>
+						<a href="#" class="outlined-btn-with-icon">
+							<span>Read More</span>
+							<span><i class="ri-arrow-right-double-fill"></i></span>
+						</a>
+					</div>
+				</div>
+				<div class="card grid">
+					<div class="illustration grid">
+						<div><img src="./Img/food.jpeg" alt="Food on table"></div>
+					</div>
+					<div class="text">
+						<h5 class="h5">Guest Hosting</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, numquam facere aut
+							minus ratione quaerat inventore provident, ipsum sint rerum incidunt aperiam quia nobis ad
+							quos sit commodi animi excepturi?</p>
+						<a href="#" class="outlined-btn-with-icon">
+							<span>Read More</span>
+							<span><i class="ri-arrow-right-double-fill"></i></span>
+						</a>
+					</div>
+				</div>
+				<div class="card grid">
+					<div class="illustration grid">
+						<div><img src="./Img/bed.jpeg" alt="Food on table"></div>
+					</div>
+					<div class="text">
+						<h5 class="h5">Guest Hosting</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, numquam facere aut
+							minus ratione quaerat inventore provident, ipsum sint rerum incidunt aperiam quia nobis ad
+							quos sit commodi animi excepturi?</p>
+						<a href="#" class="outlined-btn-with-icon">
+							<span>Read More</span>
+							<span><i class="ri-arrow-right-double-fill"></i></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="home-menu section-has-top" id="home-menu">
+		<div class="home-menu-conatiner">
+			<h2 class="h2 home-menu-title has-border">
+				<span>Our best menu so far</span>
+			</h2>
+			<div class="container">
+				<div class="menu-items grid">
+					<div class="item grid">
+						<div class="img">
+							<img src="./Img/M1.jpg" alt="Menu">
+						</div>
+						<div class="menu-description">
+							<h4 class="h4 menu-name">
+								<strong>
+									<span>Some Sea Food</span>
+								</strong>
+							</h4>
+							<p>
+								<span>champignon</span>
+								<span>Letuce</span>
+								<span>Beef</span>
+								<span>champignon</span>
+								<span>Letuce</span>
+								<span>Beef</span>
+								<span>champignon</span>
+								<span>Letuce</span>
+								<span>champignon</span>
+								<span>Letuce</span>
+								<span>champignon</span>
+								<span>Letuce</span>
+								<span>Beef</span>
+								<span>champignon</span>
+								<span>Letuce</span>
+								<span>Beef</span>
+								<span>champignon</span>
+								<span>Letuce</span>
+								<span>champignon</span>
+								<span>Letuce</span>
+							</p>
+						</div>
+					</div>
+
+					<div class="item grid">
+						<div class="img">
+							<img src="./Img/M2.jpg" alt="Menu">
+						</div>
+						<div class="menu-description">
+							<h4 class="h4 menu-name">
+								<strong>
+									<span>Some Sea Food</span>
+								</strong>
+							</h4>
+							<p>
+								<span>champignon</span>
+								<span>Letuce</span>
+								<span>Beef</span>
+								<span>champignon</span>
+								<span>Letuce</span>
+								<span>Beef</span>
+								<span>champignon</span>
+								<span>Letuce</span>
+								<span>champignon</span>
+								<span>Letuce</span>
+								<span>champignon</span>
+								<span>Letuce</span>
+								<span>Beef</span>
+								<span>champignon</span>
+								<span>Letuce</span>
+								<span>Beef</span>
+								<span>champignon</span>
+								<span>Letuce</span>
+								<span>champignon</span>
+								<span>Letuce</span>
+							</p>
+						</div>
+					</div>
+
+					<div class="item grid">
+						<div class="img">
+							<img src="./Img/M3.jpg" alt="Menu">
+						</div>
+						<div class="menu-description">
+							<h4 class="h4 menu-name">
+								<strong>
+									<span>Some Sea Food</span>
+								</strong>
+							</h4>
+							<p>
+								<span>champignon</span>
+								<span>Letuce</span>
+								<span>Beef</span>
+								<span>Letuce</span>
+								<span>Beef</span>
+								<span>Letuce</span>
+								<span>Beef</span>
+								<span>Letuce</span>
+								<span>Beef</span>
+								<span>Letuce</span>
+							</p>
+						</div>
+					</div>
+
+					<div class="item grid">
+						<div class="img">
+							<img src="./Img/M4.jpg" alt="Menu">
+						</div>
+						<div class="menu-description">
+							<h4 class="h4 menu-name">
+								<strong>
+									<span>Some Sea Food</span>
+								</strong>
+							</h4>
+							<p>
+								<span>champignon</span>
+								<span>Letuce</span>
+								<span>Beef</span>
+								<span>Letuce</span>
+								<span>Beef</span>
+								<span>Letuce</span>
+								<span>Beef</span>
+								<span>Letuce</span>
+								<span>Beef</span>
+								<span>Letuce</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="home-room-listing section-has-top" id="home-room-listing">
+		<div class="home-room-listing__container container">
+			<h2 class="h2 listing-title has-border">
 				<span>Visitors Favourite Rooms</span>
 			</h2>
-			<div class="product-list">
-				<div class="product">
+			<div class="home-room-list">
+				<div class="home-room">
 					<a href="#" rel="noopener noreferrer">
 						<div class="prd-image-container">
 							<img src="./Img/room1.jpeg" alt="" class="prod-img">
+							<div class="sm-guide">
+								<div class="is-available">
+									<span><i class="ri-shield-check-fill"></i></span>
+									<span>Available</span>
+								</div>
+								<div class="price-tag">
+									<span>30$ Daily</span>
+								</div>
+								<div class="person-number">
+									<span><i class="ri-group-fill"></i></span>
+									<span>3 People</span>
+								</div>
+							</div>
 						</div>
-						<h3 class="product-title h3">Our best menu</h3>
-						<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						<h3 class="home-room-title h3">Our best menu</h3>
+						<p class="home-room-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							Architecto
 							non
 							consequuntur adipisci suscipit tempore animi quibusdam fugiat nostrum. Corporis fugit cumque
@@ -74,9 +377,9 @@
 
 					</a>
 					<div class="prd-card-boutons">
-						<a href="#" class="product-link outlined-btn-with-icon">
+						<a href="#" class="home-room-link outlined-btn-with-icon">
 							<span>View Deal</span>
-							<span><i class="ri-arrow-right-circle-fill"></i></span>
+							<span><i class="ri-arrow-right-double-fill"></i></span>
 						</a>
 						<button href="#" class="book-btn outlined-btn-with-icon">
 							<span>Book Now</span>
@@ -84,13 +387,26 @@
 						</button>
 					</div>
 				</div>
-				<div class="product">
+				<div class="home-room">
 					<a href="#" rel="noopener noreferrer">
 						<div class="prd-image-container">
 							<img src="./Img/room2.jpeg" alt="" class="prod-img">
+							<div class="sm-guide">
+								<div class="is-available">
+									<span><i class="ri-shield-check-fill"></i></span>
+									<span>Available</span>
+								</div>
+								<div class="price-tag">
+									<span>30$ Daily</span>
+								</div>
+								<div class="person-number">
+									<span><i class="ri-group-fill"></i></span>
+									<span>3 People</span>
+								</div>
+							</div>
 						</div>
-						<h3 class="product-title h3">Our best menu</h3>
-						<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						<h3 class="home-room-title h3">Our best menu</h3>
+						<p class="home-room-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							Architecto
 							non
 							consequuntur adipisci suscipit tempore animi quibusdam fugiat nostrum. Corporis fugit cumque
@@ -99,9 +415,9 @@
 
 					</a>
 					<div class="prd-card-boutons">
-						<a href="#" class="product-link outlined-btn-with-icon">
+						<a href="#" class="home-room-link outlined-btn-with-icon">
 							<span>View Deal</span>
-							<span><i class="ri-arrow-right-circle-fill"></i></span>
+							<span><i class="ri-arrow-right-double-fill"></i></span>
 						</a>
 						<button href="#" class="book-btn outlined-btn-with-icon">
 							<span>Book Now</span>
@@ -109,13 +425,26 @@
 						</button>
 					</div>
 				</div>
-				<div class="product">
+				<div class="home-room">
 					<a href="#" rel="noopener noreferrer">
 						<div class="prd-image-container">
 							<img src="./Img/room1.jpeg" alt="" class="prod-img">
+							<div class="sm-guide">
+								<div class="is-available">
+									<span><i class="ri-shield-check-fill"></i></span>
+									<span>Available</span>
+								</div>
+								<div class="price-tag">
+									<span>30$ Daily</span>
+								</div>
+								<div class="person-number">
+									<span><i class="ri-group-fill"></i></span>
+									<span>3 People</span>
+								</div>
+							</div>
 						</div>
-						<h3 class="product-title h3">Our best menu</h3>
-						<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						<h3 class="home-room-title h3">Our best menu</h3>
+						<p class="home-room-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							Architecto
 							non
 							consequuntur adipisci suscipit tempore animi quibusdam fugiat nostrum. Corporis fugit cumque
@@ -124,84 +453,9 @@
 
 					</a>
 					<div class="prd-card-boutons">
-						<a href="#" class="product-link outlined-btn-with-icon">
+						<a href="#" class="home-room-link outlined-btn-with-icon">
 							<span>View Deal</span>
-							<span><i class="ri-arrow-right-circle-fill"></i></span>
-						</a>
-						<button href="#" class="book-btn outlined-btn-with-icon">
-							<span>Book Now</span>
-							<span><i class="ri-ticket-2-fill"></i></span>
-						</button>
-					</div>
-				</div>
-				<div class="product">
-					<a href="#" rel="noopener noreferrer">
-						<div class="prd-image-container">
-							<img src="./Img/room2.jpeg" alt="" class="prod-img">
-						</div>
-						<h3 class="product-title h3">Our best menu</h3>
-						<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Architecto
-							non
-							consequuntur adipisci suscipit tempore animi quibusdam fugiat nostrum. Corporis fugit cumque
-							modi,
-							blanditiis suscipit voluptates veniam ab magnam. Dolorum, obcaecati.</p>
-
-					</a>
-					<div class="prd-card-boutons">
-						<a href="#" class="product-link outlined-btn-with-icon">
-							<span>View Deal</span>
-							<span><i class="ri-arrow-right-circle-fill"></i></span>
-						</a>
-						<button href="#" class="book-btn outlined-btn-with-icon">
-							<span>Book Now</span>
-							<span><i class="ri-ticket-2-fill"></i></span>
-						</button>
-					</div>
-				</div>
-				<div class="product">
-					<a href="#" rel="noopener noreferrer">
-						<div class="prd-image-container">
-							<img src="./Img/room1.jpeg" alt="" class="prod-img">
-						</div>
-						<h3 class="product-title h3">Our best menu</h3>
-						<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Architecto
-							non
-							consequuntur adipisci suscipit tempore animi quibusdam fugiat nostrum. Corporis fugit cumque
-							modi,
-							blanditiis suscipit voluptates veniam ab magnam. Dolorum, obcaecati.</p>
-
-					</a>
-					<div class="prd-card-boutons">
-						<a href="#" class="product-link outlined-btn-with-icon">
-							<span>View Deal</span>
-							<span><i class="ri-arrow-right-circle-fill"></i></span>
-						</a>
-						<button href="#" class="book-btn outlined-btn-with-icon">
-							<span>Book Now</span>
-							<span><i class="ri-ticket-2-fill"></i></span>
-						</button>
-					</div>
-				</div>
-				<div class="product">
-					<a href="#" rel="noopener noreferrer">
-						<div class="prd-image-container">
-							<img src="./Img/room2.jpeg" alt="" class="prod-img">
-						</div>
-						<h3 class="product-title h3">Our best menu</h3>
-						<p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Architecto
-							non
-							consequuntur adipisci suscipit tempore animi quibusdam fugiat nostrum. Corporis fugit cumque
-							modi,
-							blanditiis suscipit voluptates veniam ab magnam. Dolorum, obcaecati.</p>
-
-					</a>
-					<div class="prd-card-boutons">
-						<a href="#" class="product-link outlined-btn-with-icon">
-							<span>View Deal</span>
-							<span><i class="ri-arrow-right-circle-fill"></i></span>
+							<span><i class="ri-arrow-right-double-fill"></i></span>
 						</a>
 						<button href="#" class="book-btn outlined-btn-with-icon">
 							<span>Book Now</span>
@@ -212,17 +466,121 @@
 			</div>
 		</div>
 	</section>
-	<!--End product-->
+	<!--End home-room-->
+
+	<section class="contact section-has-top" id="contact">
+		<div class="contact-container container">
+			<h2 class="h2 home-menu-title has-border">
+				<span>Contact Us</span>
+			</h2>
+			<div class="contact-content grid">
+				<div class="contact-links">
+					<ul>
+						<li>
+							<a href="#" class="contact-link flex">
+								<span>
+									<i class="ri-map-pin-line"></i>
+								</span>
+								<span>123 Main St, City, Country</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="contact-link flex">
+								<span>
+									<i class="ri-mail-line"></i>
+								</span>
+								<span>info@example.com</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="contact-link flex">
+								<span>
+									<i class="ri-phone-line"></i>
+								</span>
+								<span>+000 000 000 000</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="contact-link flex">
+								<span>
+									<i class="ri-whatsapp-line"></i>
+								</span>
+								<span>+000 000 000 000</span>
+							</a>
+						</li>
+					</ul>
+					<h5 class="h5">Or Follow Us</h5>
+					<div class="socials">
+						<a href="#">
+							<i class="ri-instagram-fill"></i>
+						</a>
+						<a href="#">
+							<i class="ri-twitter-x-line"></i>
+						</a>
+						<a href="#">
+							<i class="ri-tiktok-fill"></i>
+						</a>
+					</div>
+				</div>
+				<div class="contact-form">
+					<form action="#">
+						<div class="name">
+							<input type="text" name="name" placeholder="Name" id="name" required>
+							<label for="name">Name</label>
+						</div>
+						<div class="mail">
+							<input type="email" name="email" placeholder="E-Mail" id="email" required>
+							<label for="email">E-Mail</label>
+						</div>
+						<div class="message">
+							<textarea name="message" placeholder="Message" id="message" required></textarea>
+							<label for="message">Message</label>
+						</div>
+						<button type="submit" class="outlined-btn-with-icon">
+							<span>Submit</span>
+							<span>
+								<i class="ri-send-plane-2-line"></i>
+							</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<!--End Contact-->
-	<footer class="footer">
-		<h1>ABOUT THE HOTEL</h1>
-		<p class="about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum consectetur voluptatem eius
-			nihil distinctio id. Eaque amet enim nam nisi, quibusdam blanditiis ratione dolorum vel rem, quas ab
-			asperiores commodi.
-			Itaque aspernatur ipsam repudiandae. Dolorem, saepe. Eius fuga accusantium praesentium culpa maxime eligendi
-			dicta debitis perferendis, tempora adipisci sed eos labore sit minus laboriosam quis repellat et magnam
-			eaque ullam.</p>
+	<footer class="footer section-has-top">
+		<div class="nav footer-nav">
+			<div class="navbar container">
+				<div class="logo">
+					<a href="#">Logo</a>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam consequuntur amet officiis
+						recusandae illo nihil enim quas maxime dolor at voluptates pariatur officia porro nemo veniam,
+						iusto fuga et unde. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi cum
+						accusamus doloremque vero labore possimus, ad velit veritatis, quidem voluptatum nihil ducimus
+						distinctio, consequatur iste. Excepturi quod hic quam distinctio.
+					</p>
+				</div>
+				<ul class="nav-links">
+					<li><a href="" class="nav-link">Home</a></li>
+					<li><a href="" class="nav-link">Services</a></li>
+					<li><a href="" class="nav-link">Rooms</a></li>
+					<li><a href="" class="nav-link">Menus</a></li>
+					<li><a href="" class="nav-link">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>
+				<span>ARISTUDE Williame</span>
+				<span>
+					<i class="ri-copyright-line"></i>
+				</span>
+				<span>
+					Copyright 2024
+				</span>
+			</p>
+		</div>
 	</footer>
 </body>
 
