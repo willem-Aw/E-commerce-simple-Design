@@ -113,6 +113,7 @@ html {
 body {
     background-color: var(--body-bg);
     overflow-x: hidden !important;
+    scroll-behavior: smooth;
 }
 
 .h1 {
@@ -1254,6 +1255,10 @@ body {
     }
 }
 
+.nav-btn-mobile {
+    display: none;
+}
+
 @media screen and (min-width: 2000px) {
     .container {
         max-width: min(1980px, 100%);
@@ -1354,9 +1359,7 @@ body {
         --regular-font-size: 0.85rem;
     }
 
-    .nav {
-        height: 100svh;
-        height: 100vh;
+    .nav.top-nav {
         width: 100%;
         display: block;
         overflow: hidden;
@@ -1366,30 +1369,50 @@ body {
             padding: 0;
             display: block;
 
-            &.active {
-                box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.60);
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.6);
+                z-index: -1;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity var(--transition-timing), visibility var(--transition-timing);
             }
 
             .nav-header {
+                position: fixed;
+                z-index: 10;
                 width: 100%;
                 background-color: var(--body-bg);
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: var(--element-gap);
+                padding: calc(var(--element-gap) / 2);
+                height: 70px;
+                max-height: 70px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
 
                 .nav-btn-mobile {
                     display: block;
                     width: 40px;
                     height: max-content;
-                    padding: calc(var(--element-gap) - 0.75rem);
+                    padding: .25rem;
 
                     &>span {
                         display: block;
-                        width: 80%;
+                        width: 70%;
                         height: 2px;
                         background-color: var(--text-color);
                         margin: 5px 0;
+                        transform: rotate(0deg);
+                        transition: transform var(--transition-timing), opacity var(--transition-timing);
 
                         &:nth-child(2) {
                             width: 50%;
@@ -1403,7 +1426,7 @@ body {
                         grid-template-columns: repeat(1, 1fr);
 
                         &>span {
-                            width: 100%;
+                            width: 90%;
                             grid-column: 1/ span 1;
                             grid-row: 1/ span 1;
                         }
@@ -1423,14 +1446,25 @@ body {
                     }
 
                 }
+
+                .logo {
+                    & a {
+                        padding: calc(var(--element-gap) / 2);
+                    }
+                }
             }
 
             .nav-links {
+                position: relative;
+                visibility: hidden;
+                opacity: 0;
+                top: -100%;
                 width: 100%;
                 background-color: var(--body-bg);
                 display: grid;
                 gap: calc(var(--element-gap) / 2);
                 padding: 0 var(--element-gap) var(--element-gap);
+                transition: all 0.3s ease-in-out;
 
                 &>li {
                     display: block;
@@ -1441,9 +1475,31 @@ body {
                         display: block;
                         padding: calc(var(--element-gap) / 2) 0;
 
+                        &::before, &::after {
+                            display: none;
+                        }
                     }
                 }
             }
+
+            &.active {
+
+                &::before {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                position: fixed;
+                height: 100vh;
+                height: 100svh;
+
+                .nav-links {
+                    visibility: visible;
+                    opacity: 1;
+                    top: 70px;
+                }
+            }
+
         }
     }
 
@@ -1453,6 +1509,8 @@ body {
 
 
     .hero {
+        top: 70px;
+
         .hero-container {
             flex-wrap: wrap;
             justify-content: center;
