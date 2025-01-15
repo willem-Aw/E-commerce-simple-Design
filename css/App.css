@@ -400,7 +400,7 @@ body {
     left: 0;
     right: 0;
     background: transparent;
-    overflow-x: hidden;
+    overflow: hidden;
 
     .navbar {
         position: relative;
