@@ -36,3 +36,6 @@ function smoothScroll(target) {
         });
     }
 }
+
+const year = new Date().getFullYear();
+document.querySelector(".year-copyright").textContent = year;
