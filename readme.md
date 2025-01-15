@@ -8,9 +8,11 @@ Here is a screenshot of the app:
 
 ![Screenshot of the app](./Img/Screenshot/Simple-E-Com-SS1.png)
 ---
+![Screenshot of the app](./Img/Screenshot/Simple-E-Com-SS2.png)
+---
 ![Screenshot of the app](./Img/Screenshot/Simple-E-Com-SS-Mob1.png)
 ---
-![Screenshot of the app](./Img/Screenshot/Simple-E-Com-SS2.png)
+![Screenshot of the app](./Img/Screenshot/Simple-E-Com-SS-Mob2.png)
 
 
 The app is built with the following technologies:
